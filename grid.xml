@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/gridd"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_width="170dp"
+    android:layout_height="100dp"
+    >
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="match_parent"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#f07d00" />
+
+</LinearLayout>

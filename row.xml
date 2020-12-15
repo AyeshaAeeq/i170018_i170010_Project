@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:id="@+id/rowww"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="4"
+    android:layout_width="wrap_content"
+    android:layout_height="78dp"
+    android:padding="6dip"
+    android:background="@drawable/back2"
+    android:backgroundTint="#f07d00"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:weightSum="1"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/image"
+            android:layout_weight="1"
+            android:layout_width="78dp"
+
+            android:layout_height="78dp"
+            android:src="@drawable/profile_icon"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+        <TextView
+
+            android:textSize="20dp"
+            android:id="@+id/name"
+            android:layout_weight="0.5"
+
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="0dp"
+            android:text="name"
+            tools:ignore="Suspicious0dp" />
+
+
+        <TextView
+
+            android:textSize="15dp"
+            android:id="@+id/rollNo"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+
+            android:fontFamily="sans-serif-condensed"
+            android:layout_height="0dp"
+            android:text="RollNO"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:weightSum="0.5"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/pora"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:layout_height="wrap_content"
+            android:textColor="#DA1406"
+            android:layout_margin="5dp"
+            android:text="Absent!"/>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/img"
+        android:background="@drawable/face"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:weightSum="1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+</LinearLayout>

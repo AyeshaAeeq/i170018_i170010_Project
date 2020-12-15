@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f07d00"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".AttendanceActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:id="@+id/back"
+                       android:layout_width="50dp"
+                       android:layout_height="50dp"
+                       android:layout_gravity="right|bottom"
+                       android:layout_marginTop="25dp"
+                android:layout_marginRight="5dp"
+                       android:layout_marginLeft="5dp"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintLeft_toLeftOf="parent"
+                       app:layout_constraintRight_toLeftOf="@+id/text"
+                       app:backgroundTint="#f07d00"
+
+                       app:srcCompat="@drawable/ic_baseline_chevron_left_24"
+                       />
+                   <TextView
+                       android:id="@+id/text"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginRight="20dp"
+                       android:layout_marginTop="30dp"
+                       android:fontFamily="sans-serif-smallcaps"
+                       android:text="Mark Attendance"
+                       android:textColor="#FDFFFF"
+                       android:textSize="26dp"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintLeft_toRightOf="@+id/back"
+                       app:layout_constraintRight_toLeftOf="@+id/profile"
+                       tools:ignore="MissingConstraints"
+                       tools:layout_editor_absoluteY="31dp" />
+
+                   <com.google.android.material.floatingactionbutton.FloatingActionButton
+                       android:id="@+id/profile"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginRight="30dp"
+                       android:layout_marginBottom="620dp"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:srcCompat="@drawable/ic_baseline_person_24"
+                       app:layout_constraintTop_toTopOf="@+id/ll"
+                       android:tint="#D8E6E5"
+                       android:tooltipText="@string/app_name"
+                       app:backgroundTint="#d10027"
+                       tools:ignore="MissingConstraints" />
+
+                   <LinearLayout
+                       android:id="@+id/ll"
+                       android:layout_width="match_parent"
+
+                       android:layout_alignParentBottom="true"
+                       android:layout_gravity="center"
+
+
+                       android:layout_marginTop="100dp"
+
+                       android:background="@drawable/back"
+                       android:orientation="vertical"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+                       tools:ignore="MissingConstraints"
+                       android:layout_height="match_parent">
+
+                       <androidx.recyclerview.widget.RecyclerView
+                           android:id="@+id/rv"
+                           android:layout_width="match_parent"
+                           android:layout_height="500dp"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginTop="15dp" />
+
+                   </LinearLayout>
+                   <Button
+                       android:id="@+id/submit"
+                       android:layout_width="200dp"
+                       android:text="Submit"
+                       android:textColor="#FDFFFF"
+                       android:layout_height="wrap_content"
+
+                       app:layout_constraintRight_toRightOf="parent"
+                       app:layout_constraintLeft_toLeftOf="parent"
+                       android:layout_marginBottom="30dp"
+                       android:tint="#D8E6E5"
+                       app:backgroundTint="#d10027"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       />
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+           </RelativeLayout>
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
